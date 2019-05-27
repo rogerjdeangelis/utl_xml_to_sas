@@ -57,7 +57,7 @@ data _null_;
                  memnames=catx(",",memname,memnames);
              end;
              call symputx("memnames",memnames);
-             call symputx("folder",parent);
+             call symputx("folder","parent");
              rc=dclose(fid);
          run;quit;
          %put &=memnames;
